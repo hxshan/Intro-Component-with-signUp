@@ -21,10 +21,43 @@
                 </div>
                 <div class="form-container">
                     <form action="">
-                        <input type="text" name="First Name" id="FirstName" placeholder="First Name">
-                        <input type="text" name="Last Name" id="LastName" placeholder="Last Name">
-                        <input type="email" name="email" id="email" placeholder="Email Address">
-                        <input type="password" name="password" id="password" placeholder="Password">
+                        <div class="input-field">
+                            <input class="input-box" type="text" name="First Name" id="FirstName" placeholder="First Name">
+                            <div class="error hidden">
+                                <span>First Name cannot be empty </span>
+                                <img  src="images/icon-error.svg" alt="error-icon">
+                            </div>
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <input class="input-box" type="text" name="Last Name" id="LastName" placeholder="Last Name">
+                            <div class="error hidden">
+                                
+                                <span>Last Name cannot be empty </span>
+                                <img src="images/icon-error.svg" alt="error-icon">
+                            </div>
+                            
+                        </div>
+
+                        <div class="input-field">
+                            <input class="input-box" type="email" name="email" id="email" placeholder="Email Address">
+                            <div class="error hidden">
+                                <span id="email-error" >Email Address cannot be empty </span>
+                                <img src="images/icon-error.svg" alt="error-icon">  
+                            </div>       
+                        </div>
+
+                        <div class="input-field">
+                            
+                            <input class="input-box" type="password" name="password" id="password" placeholder="Password">
+                            <div class="error hidden">
+                                <span>Password cannot be empty </span>
+                                <img src="images/icon-error.svg" alt="error-icon"> 
+                            </div>
+                                                      
+                        </div>
+
                         <input id="submit" type="submit" value="CLAIM YOUR FREE TRIAL">
                     </form>
                     <div class="condition-container">

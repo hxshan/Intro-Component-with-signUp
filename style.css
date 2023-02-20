@@ -38,12 +38,28 @@
     padding-bottom: 2.5rem;
 
 }
-.input-container{
+.input-field{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: end;
 }
+.input-field span{
+    color: red;
+    font-size: 0.7rem;  
+    font-style: italic;
+}
+.error {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: row;
+
+}
+.error img{
+    position: absolute;
+    translate: -22% -179%;
+}
+
 .offer-card{
     background-color: hsl(248, 32%, 49%);
     border-radius: 10px;
@@ -78,7 +94,7 @@
     margin-bottom: 1rem;
     border-radius: 5px;
     border:1px gray solid;
-    padding:.7rem;
+    padding:.7rem 0rem .7rem .7rem;
     
     
 }
@@ -88,6 +104,12 @@
     color: white;
     font-family: 'Poppins',sans-serif;
     font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-container form input#submit:hover{
+    background-color: hsl(154, 61%, 55%);
+    cursor: pointer;
 
 }
 .form-container .condition-container{
@@ -100,7 +122,15 @@
     color: hsl(0, 100%, 74%) ;
     font-weight: 700;
 }
-@media screen and (min-width:1240px) {
+.hidden{
+    display: none;
+}
+.red-text{
+    font-family: 'Poppins',sans-serif;
+    color: red;
+    font-weight: 600;
+}
+@media screen and (min-width:1024px) {
     .main-container{
         background-image: url(images/bg-intro-desktop.png);
         background-size: cover;
@@ -118,18 +148,40 @@
     .form-container{
         margin-top: 2rem;
         background-color: white;
-        width: 27rem;
+        width: 25rem;
         padding: 2rem;
         border-radius: 10px;
     }
-    .form-container form input{
-        margin-bottom: 1.8rem;
-        padding: 1rem;
-       
+    .form-container form{
+        display: flex;
+        flex-direction: column;
+
     }
-    .form-container form input#submit{
-        border: 1px solid green;
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 20px -20px;
+    .form-container form > input#submit{
+        
+        width:25rem;
+    }
+    .input-field{
+        display: flex; 
+        flex-direction: column;
+        align-items:end ;
+        text-align: end;
+        width: 25rem;
+    }
+    .input-field input{
+        width:24rem;
+    }
+
+
+    .error img{
+        position: absolute;
+        translate: -22% -215%;
+    }
+    .error  span{
+        font-size: .8rem;
+        padding-bottom: .5rem;
+        color: red;
+        translate: -2% -20%;
     }
 
     .text-container{
@@ -142,7 +194,7 @@
         padding-bottom: 2rem;
     }
     .offer-card{
-        width:31rem;
+        width:29rem;
     
     }
     .offer-card p{
