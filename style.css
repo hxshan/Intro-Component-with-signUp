@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    z-index: -1;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem;
+    max-width: 20rem;
+}
+.text-container{
+    text-align: center;
+    padding-top: 3rem;
+}
+.text-container h1{
+    line-height: 2.3rem;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+
+}
+.text-container p{
+    padding-bottom: 2.5rem;
+
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offer-card{
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.offer-card p{
+    text-align: center;
+    padding: .8rem ;
+    color: rgba(255, 255, 255, 0.5);
+ 
+}
+.offer-card p span{
+    font-weight: 600;
+    color:white;
+}
+
+.form-container{
+    margin-top: 2rem;
+    background-color: white;
+    width: 17rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-container form input{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border:1px gray solid;
+    padding:.7rem;
+    
+    
+}
+.form-container form input#submit{
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+
+}
+.form-container .condition-container{
+    font-family: 'Poppins',sans-serif;
+    font-size: .7rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.form-container .condition-container span{
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 700;
+}
+@media screen and (min-width:1240px) {
+    .main-container{
+        background-image: url(images/bg-intro-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .content-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding:0;
+        max-width:80vw;
+    }
+    .form-container{
+        margin-top: 2rem;
+        background-color: white;
+        width: 27rem;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+    .form-container form input{
+        margin-bottom: 1.8rem;
+        padding: 1rem;
+       
+    }
+    .form-container form input#submit{
+        border: 1px solid green;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 20px -20px;
+    }
+
+    .text-container{
+        text-align: start;
+        padding-right:6rem;
+        padding-left: 2rem;
+    }
+    .text-container h1{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    .offer-card{
+        width:31rem;
+    
+    }
+    .offer-card p{
+        text-align: center;
+        padding:  1rem 2rem ;
+        
+    }
+    
+}
